@@ -1,14 +1,14 @@
 #include <stdio.h>
-void inc(int x,int n){
-    if(x>n) return ;
-    printf("%d\n",x);
-    inc(x+1,n);
+void inc(int n){
+    if(n==0) return ;
+       inc(n-1);
+    printf("%d",n);
     return;
 }
 int main(){
     int n;
     printf("enter n : ");
     scanf("%d",&n);
-    inc(1,n);
+    inc(n);
     return 0;
 }
