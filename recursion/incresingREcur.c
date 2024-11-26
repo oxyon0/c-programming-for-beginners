@@ -2,7 +2,7 @@
 void inc(int n){
     if(n==0) return ;
        inc(n-1);
-    printf("%d",n);
+    printf("\n%d",n);
     return;
 }
 int main(){
