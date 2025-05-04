@@ -1,16 +1,13 @@
 #include <stdio.h>
 int main(){
-int n;
-printf("enter no. : ");
-scanf("%d",&n);
-int a = 1;
-int b = 1;
-int sum = 1;
-for(int i=1;i<=n-2;i++){
-sum = a + b;
-a = b;
-b = sum;
-}
-printf("the Fibonacci no. of %d is : \n%d",n,sum);
+int n,i,a=0,b=1,c;
+  printf("enter n :");
+  scanf("%d",&n);
+  for(i=0;i<=n;i++){
+    c=a+b;
+    printf("%d",a);
+    c=b;
+    b=c;
+  }
 return 0;
 }
