@@ -1,14 +1,14 @@
-#include <stdio.h>
-void x (int n){
-    if(n==0) return ;
-    printf("\ngood");
-    x(n-1);
-    return ;
+#include<stdio.h>
+void Dec(int n){
+if(n==0) return;
+    printf("%d",n);
+Dec(n-1);
+return;
 }
 int main(){
     int n;
-    printf("enter n : ");
+    printf("n : ");
     scanf("%d",&n);
-    x(n);
+    Dec(n);
     return 0;
 }
